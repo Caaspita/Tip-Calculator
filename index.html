@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+<body class="contenedor">
+  <section class="titulo">
+    <h1 class="titulo-display">Spli<span>tter</span></h1>
+  </section>
+  <section class="content">
+    <article class="content-input">
+      <p>Bill</p>
+      <div class="in-box">
+        <img src="./images/icon-dollar.svg">
+        <input class="input" type="number" id="in-import">
+      </div>
+      <div>
+      <p>Select Tip %</p>
+      <div class="btns">
+        <button class="btn" id="tip5">5%</button>
+        <button class="btn" id="tip10">10%</button>
+        <button class="btn" id="tip15">15%</button>
+        <button class="btn" id="tip25">25%</button>
+        <button class="btn" id="tip50">50%</button>
+        <input class="input-btn input" placeholder="Custom"></input>
+      </div>
+      </div>
+      <div class="n-people">
+        <p>Number of People</p>
+        <p class="p-error ocultar">Can`t be zero</p>
+      </div>
+      <div class="in-box">
+        <img src="./images/icon-person.svg">
+        <input class="input" type="number" id="in-people">
+      </div>
+    </article>
+    <article class="content-ui">
+      <div class="ui-box">
+        <div>
+          <p class="p-box">Tip Amount</p>
+          <p class="n-person-box">/ person</p>
+        </div>
+        <p class="output">$<span id="tip-amount">0.00</span></p>
+      </div>
+      <div class="ui-box">
+        <div>
+          <p class="p-box">Total</p>
+          <p class="n-person-box">/ person</p>
+        </div>
+        <p class="output">$<span id="total-person">0.00</span></p>
+      </div>
+      <button class="reset">Reset</button>
+    </article>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
