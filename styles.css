@@ -93,8 +93,8 @@ input[type=number] {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 30px;
     gap: 10px;
-    
 }
+
 .btn{
     background-color: var(--Verydarkcyan);
     border-style: none;
@@ -108,9 +108,13 @@ input[type=number] {
     background-color: var(--Lightgrayishcyan);
     color: var(--Verydarkcyan);
 }
-.btn:focus{
+.btn:focus-within, .btn:active{
     background-color: var(--Strongcyan);
 }
+.btn.selected {
+    background-color: var(--Strongcyan); /* Color de fondo seleccionado */
+    color: #fff; /* Color de texto seleccionado */
+  }
 .input-btn{
     padding-left: 0;
 }
