@@ -177,3 +177,28 @@ input[type=number] {
     display: none;
 }
 
+ @media (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh;
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .titulo{
+        margin: 0;
+        padding: 20px 0;
+
+    }
+    .input-btn::placeholder{
+        text-align: center;
+
+    }
+    .btns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
