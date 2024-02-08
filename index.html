@@ -30,12 +30,12 @@
         <button class="btn b" id="tip15" value="15">15%</button>
         <button class="btn b" id="tip25" value="25">25%</button>
         <button class="btn b" id="tip50" value="50">50%</button>
-        <input class="input-btn input b" placeholder="Custom"></input>
+        <input class="input-btn input b" placeholder="Custom" id="custom"></input>
       </div>
       </div>
       <div class="n-people">
         <p>Number of People</p>
-        <p class="p-error ocultar">Can`t be zero</p>
+        <p class="p-error ocultar" id="error">Can`t be zero</p>
       </div>
       <div class="in-box">
         <img src="./images/icon-person.svg">
@@ -57,7 +57,7 @@
         </div>
         <p class="output">$<span id="total-person">0.00</span></p>
       </div>
-      <button class="reset">Reset</button>
+      <button class="reset" onclick="reset()">Reset</button>
     </article>
   </section>
   <script src="app.js"></script>

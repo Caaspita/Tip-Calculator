@@ -125,7 +125,9 @@ input[type=number] {
 .p-error{
     color: rgb(230, 84, 84);
 }
-
+.in-error{
+    border:2px solid rgb(230, 84, 84);
+}
 
 /* Articulo numero dos estilos */
 
@@ -174,3 +176,4 @@ input[type=number] {
 .ocultar{
     display: none;
 }
+
